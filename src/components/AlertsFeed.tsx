@@ -48,7 +48,7 @@ export default function AlertsFeed({ alerts }: Props) {
                         <AlertItem key={alert.id} alert={alert}></AlertItem>
                     ))}
                 </ul>
-            )};
+            )}
         </section>
     )
 }
@@ -59,7 +59,7 @@ function AlertItem({alert}: {alert: Alert}) {
     return (
         <li>
             <span 
-            className={`mt-1.5 w-2 h-2 rounded-full flex-shrink-0 ${config.dotColor}`}
+            className={`mt-1.5 w-2 h-2 rounded-full shrink-0 ${config.dotColor}`}
             aria-hidden="true"
             />
 
