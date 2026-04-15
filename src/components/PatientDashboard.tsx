@@ -1,4 +1,5 @@
 import type { Patient } from '../types/patient';
+import AppHeader from './AppHeader';
 import PatientHeader from './PatientHeader';
 import GlucosePanel from './GlucoseChart';
 import VitalsGrid from './VitalsGrid';
@@ -13,6 +14,7 @@ interface Props {
 export default function PatientDashboard({ patient }: Props) {
   return (
     <div className="dashboard-layout">
+      <AppHeader />
       <PatientHeader patient={patient} />
 
       <main>
