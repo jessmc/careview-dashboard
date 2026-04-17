@@ -1,7 +1,7 @@
 import type { Patient } from '../types/patient';
 import AppHeader from './AppHeader';
 import PatientHeader from './PatientHeader';
-import GlucosePanel from './GlucoseChart';
+import GlucosePanel from './GlucosePanel';
 import VitalsGrid from './VitalsGrid';
 import AlertsFeed from './AlertsFeed';
 import MedicationList from './MedicationList';
@@ -22,7 +22,6 @@ export default function PatientDashboard({ patient }: Props) {
           currentGlucose={patient.currentGlucose}
           history={patient.glucoseHistory}
           timeInRange={patient.timeInRange}
-          sensor={patient.sensor}
         />
         <VitalsGrid vitals={patient.vitals} />
         <AlertsFeed alerts={patient.alerts} />
